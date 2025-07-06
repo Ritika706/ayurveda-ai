@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tridosha AI</title>
     <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
     <script src="https://unpkg.com/lucide@latest"></script>
   </head>
   <body>
@@ -85,7 +81,7 @@
       <br />
       <div class="journey-steps">
         <div class="step">
-          <div class="icon">🧠</div>
+          <div class="icon"><i data-lucide="brain" class="icon-brain"></i></div>
           <h4>AI Assessment</h4>
           <p>
             Advanced AI analyzes your responses to determine your unique dosha
@@ -93,7 +89,7 @@
           </p>
         </div>
         <div class="step">
-          <div class="icon">❤️</div>
+          <div class="icon"><i data-lucide="heart" class="icon-heart"></i></div>
           <h4>Personalized Plan</h4>
           <p>
             Receive custom diet, lifestyle, and herbal recommendations tailored
@@ -101,12 +97,16 @@
           </p>
         </div>
         <div class="step">
-          <div class="icon">💬</div>
+          <div class="icon">
+            <i data-lucide="message-circle" class="icon-msg"></i>
+          </div>
           <h4>AI Wellness Chat</h4>
           <p>Instant answers to your wellness questions from our AI Guide.</p>
         </div>
         <div class="step">
-          <div class="icon">📅</div>
+          <div class="icon">
+            <i data-lucide="calendar" class="icon-cal"></i>
+          </div>
           <h4>Progress Tracking</h4>
           <p>
             Monitor your wellness journey with insights and adaptive
@@ -122,7 +122,14 @@
         Join thousands who have discovered balance through personalized
         Ayurvedic guidance.
       </p>
-      <button class="btn orange">✨Begin Your Journey Now</button>
+      <div class="cta-buttons">
+        <button class="btn1">
+          <i data-lucide="sparkles"></i>Begin Your Journey Now
+        </button>
+        <button class="btn2">
+          <i data-lucide="heart"></i>Share Your Symptoms
+        </button>
+      </div>
     </section>
     <script>
       lucide.createIcons();
