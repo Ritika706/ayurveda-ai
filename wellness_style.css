@@ -1,0 +1,239 @@
+body {
+    font-family: 'Arial', sans-serif; /* Consider 'Roboto' or 'Open Sans' for a modern touch */
+    background-color: #FDF8F0; /* Light beige base */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333333; /* Dark gray for readability */
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    padding: 25px; /* Increased padding for whitespace */
+}
+
+.header {
+    margin-bottom: 30px;
+    background-color: #FDF8F0;
+    padding: 25px;
+    border-radius: 15px;
+   
+}
+
+.header .icon {
+    font-size: 2.2em; /* Slightly larger for emphasis */
+    color: #2196F3; /* Blue for Vata icon */
+    margin-bottom: 15px;
+}
+
+.header h1 {
+    font-size: 2.8em; /* Increased for visual hierarchy */
+    color: #000000; 
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header h1 .name {
+    color: #000000; /* Black for the name "zxsd" */
+    font-weight: bold;
+}
+
+.header p {
+    font-size: 1.2em; /* Increased for readability */
+    color: #7f8c8d; /* Muted gray for subtext */
+    text-align: center;
+}
+
+.header p .dosha {
+    font-weight: bold;
+    color: #fff;
+    background-color: rgb(30, 99, 142) ; /* Blue for dosha */
+    padding: 8px 12px; /* Increased padding */
+    border-radius: 12px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 25px; /* Increased gap for spacing */
+    margin-bottom: 30px;
+}
+
+.button {
+    flex: 1;
+    min-width: 220px; /* Slightly wider for balance */
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+    text-align: center;
+    transition: transform 0.3s ease; /* Smoother transition */
+    font-size: 1em;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+.button .icon-btn {
+    font-size: 1.7em; /* Larger icons */
+    margin-bottom: 15px;
+}
+
+.button strong {
+    font-weight: bold;
+    color: #4CAF50; /* Green for titles */
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em; /* Slightly larger */
+}
+
+.button p {
+    margin: 0;
+    color: #7f8c8d;
+    font-size: 0.95em; /* Slightly increased */
+    line-height: 1.5; /* Improved readability */
+}
+
+.characteristics {
+    background-color: #BBDEFB; /* Light blue for Vata */
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    color: #333333;
+}
+
+.characteristics h2 {
+    color: #4CAF50; /* Green heading */
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.8em; /* Larger heading */
+}
+
+.traits {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.trait {
+    background-color: #fff;
+    padding: 12px 20px;
+    border-radius: 20px;
+    color: #333333;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.recommendations {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.recommendations h3 {
+    color: #4CAF50; /* Green heading */
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 1.6em; /* Larger heading */
+}
+
+.recommendations p {
+    color: #7f8c8d;
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+.herbs {
+    text-align: left;
+}
+
+.herb {
+    padding: 12px;
+    background-color: #E8F5E9; /* Light green */
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.products {
+    text-align: left;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: #FFF3E0; /* Light orange */
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.product button {
+    background-color: #FF9800; /* Orange for Buy Now */
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.product button:hover {
+    background-color: #F57C00; /* Darker orange */
+}
+
+.cta {
+    background-color: #FF9800; /* Orange CTA */
+    color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.cta p {
+    margin: 0 0 15px;
+    font-size: 1.2em; /* Larger for emphasis */
+}
+
+.cta button {
+    background-color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #FF9800;
+    font-size: 1.1em;
+}
+
+.cta button:hover {
+    background-color: #E0E0E0; /* Light gray hover */
+}
+
+@media (max-width: 600px) {
+    .button-group {
+        flex-direction: column;
+        align-items: center;
+    }
+    .button {
+        min-width: 100%;
+        margin-bottom: 15px;
+    }
+}
