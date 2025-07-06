@@ -3,28 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AyurBalance AI</title>
+    <title>Tridosha AI</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <script src="https://unpkg.com/lucide@latest"></script>
   </head>
   <body>
     <header class="hero">
       <div class="logo-ring">
         <img
-          src="C:\Users\Ritik\OneDrive\Desktop\project angaar\images\ayurved logo.png"
+          src="C:\Users\Ritik\OneDrive\Desktop\project angaar\images\leaf.png"
           alt="AyurBalance Logo"
         />
       </div>
 
-      <h1>AyurBalance AI</h1>
+      <h1>Tridosha AI</h1>
       <p class="subtitle">
         Discover your unique Ayurvedic constitution and receive personalized
         wellness guidance powered by ancient wisdom and modern AI.
       </p>
 
       <div class="hero-buttons">
-        <button class="btn orange">🧘 Start Dosha Assessment</button>
-        <button class="btn green">💬 Share Your Symptoms</button>
-        <button class="btn white">📚 Learn About Ayurveda</button>
+        <button class="btn orange">
+          <i data-lucide="sparkles"></i>Start Dosha Assessment
+        </button>
+        <button class="btn grey">
+          <i data-lucide="heart"></i>Share Your Symptoms
+        </button>
+        <button class="btn white">
+          <i data-lucide="book-open"></i>Learn About Ayurveda
+        </button>
       </div>
 
       <div class="stats">
@@ -44,19 +55,25 @@
     </header>
     <section class="doshas">
       <h2>The Three Doshas</h2>
+      <br />
       <div class="dosha-cards">
         <div class="card vata">
-          <h3>🌬️Vata</h3>
+          <h3 class="emoji">🌬️</h3>
+          <h3>Vata</h3>
           <p>Air & Space</p>
           <span>Creative, Energetic, Quick-thinking</span>
         </div>
+
         <div class="card pitta">
-          <h3>🔥Pitta</h3>
+          <h3 class="emoji">🔥</h3>
+          <h3>Pitta</h3>
           <p>Fire & Water</p>
           <span>Focused, Determined, Leader</span>
         </div>
+
         <div class="card kapha">
-          <h3>🌊Kapha</h3>
+          <h3 class="emoji">🌱</h3>
+          <h3>Kapha</h3>
           <p>Earth & Water</p>
           <span>Calm, Steady, Nurturing</span>
         </div>
@@ -65,6 +82,7 @@
 
     <section class="journey">
       <h2>Your Wellness Journey</h2>
+      <br />
       <div class="journey-steps">
         <div class="step">
           <div class="icon">🧠</div>
@@ -106,5 +124,8 @@
       </p>
       <button class="btn orange">✨Begin Your Journey Now</button>
     </section>
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>
