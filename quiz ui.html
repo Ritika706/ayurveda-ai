@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dosha Assessment</title>
+    <link rel="stylesheet" href="quiz ui.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Dosha Assessment</h1>
+      <p class="subtitle">
+        Hi xyz! Answer these questions to discover your unique constitution
+      </p>
+
+      <div class="progress-section">
+        <span>Question 8 of 8</span>
+        <span>100% Complete</span>
+      </div>
+
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="dot"></span>
+          <span class="category">Physical Activity</span>
+        </div>
+
+        <h2 class="question">What type of Exercise do you prefer?</h2>
+
+        <form class="options">
+          <label class="custom-radio">
+            <input type="radio" name="body" />
+            <span class="radio-circle"></span>
+            Thin, light frame with prominent joints
+          </label>
+
+          <label class="custom-radio">
+            <input type="radio" name="body" />
+            <span class="radio-circle"></span>
+            Medium build with good muscle tone
+          </label>
+
+          <label class="custom-radio">
+            <input type="radio" name="body" />
+            <span class="radio-circle"></span>
+            Large frame with solid, heavy build
+          </label>
+        </form>
+
+        <div class="buttons">
+          <button class="btn previous">
+            <i data-lucide="move-left"></i>Previous
+          </button>
+          <button class="btn res">
+            <i data-lucide="sparkles"></i>Get Results
+          </button>
+        </div>
+      </div>
+    </div>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
