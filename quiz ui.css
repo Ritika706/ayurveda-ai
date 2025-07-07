@@ -93,6 +93,12 @@ body {
   color: #444;
   cursor: pointer;
 }
+.options label:hover{
+  background: rgb(255, 247, 242);
+  height: 50px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
 .custom-radio input[type="radio"] {
   display: none;
 }

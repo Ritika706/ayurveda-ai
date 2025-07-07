@@ -1,58 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Wellness Journey</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wellness Journey</title>
+    <link rel="stylesheet" href="name entering page.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="icon-circle"><i data-lucide="user"></i></div>
+        <h1 class="title">Welcome to Your Wellness Journey</h1>
+        <p class="subtitle">
+          Let's personalize your experience. What should we call you?
+        </p>
 
-  <div class="card">
-    <div style="display: flex; justify-content: center;">
-  
-  <div style="
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: #e26d1f;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  ">
-    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" viewBox="0 0 24 24">
-      <path d="M12 2a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 12c-4.42 0-8 2.24-8 5v1h16v-1c0-2.76-3.58-5-8-5Z"/>
-    </svg>
-  </div>
-</div>
-  
-    <h2 style="white-space: nowrap;">Welcome to Your Wellness Journey</h2>
-    <p>Let's personalize your experience. What should we call you?</p>
+        <label for="name" class="label">Your Name</label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter your name"
+          class="input"
+        />
 
-    <label for="name">Your Name</label>
-     <input type="text" id="name" placeholder="Enter your name"/>
-
-     <body style="margin:0; height:100vh; background: linear-gradient(to bottom, #fff4e6, #ffe0cc);"></body>
-          <style>
-          input[type="text"] {
-            border: 1px solid #e99611;
-          }
-          input[type="text"]:focus {
-            border: 3px double #f5a623;
-            outline: none;
-          }
-        </style>
-      
-
-
-   <div class="buttons">
-  <button class="btn btn-back">← Back</button>
-  <button class="btn btn-next" alt="✨" width="20">
-    ✨ Begin Assessment
-   
-  </button>
+        <div class="button-group">
+          <button class="btn back-btn">
+            <i data-lucide="move-left"></i>Back
+          </button>
+          <button
+            class="btn assess-btn"
+            onclick="window.location.href='quiz ui.html'"
+          >
+            <i data-lucide="sparkles"></i>Begin Assessment
+          </button>
+        </div>
+      </div>
     </div>
-  </div>
-
-</body>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
 </html>
