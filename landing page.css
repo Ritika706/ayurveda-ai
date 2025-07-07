@@ -221,10 +221,8 @@ h2{
 
 .journey {
   text-align: center;
-  padding: 2rem;
+  padding: 2rem 1rem;
   background-color: #fffcf7;
-  margin-left: 70px;
-  margin-right: 70px;
 }
 
 .journey-steps {
