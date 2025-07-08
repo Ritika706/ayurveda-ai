@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Tridosha AI</title>
     <link rel="stylesheet" href="About.css" />
-
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
   </head>
   <body>
-    <header>
-      <div class="logo">🧘‍♀️ Tridosha AI</div>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">Learn</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+    <header class="site-header">
+      <div class="logo-section">
+        <img src="images/leaf.png" alt="Logo" class="logo" />
+        <h1 class="site-title">Tridosha AI</h1>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="signin.html">Sign In</a>
+        <a href="signup.html">Sign Up</a>
       </nav>
     </header>
 
@@ -33,7 +33,7 @@
       <section class="mission-vision">
         <div class="box">
           <div class="icon-circle mission-icon">
-            <i class="far fa-heart"></i>
+            <i data-lucide="heart"></i>
           </div>
           <h3>Our Mission</h3>
           <p>
@@ -45,7 +45,7 @@
         </div>
         <div class="box">
           <div class="icon-circle vision-icon">
-            <i class="fas fa-brain"></i>
+            <i data-lucide="brain"></i>
           </div>
           <h3>Our Vision</h3>
           <p>
@@ -61,7 +61,7 @@
       <section class="values">
         <div class="value-box">
           <div class="icon-circle value-icon green">
-            <i class="fas fa-globe"></i>
+            <i data-lucide="globe"></i>
           </div>
           <h4>Holistic Wellness</h4>
           <p>
@@ -71,7 +71,7 @@
         </div>
         <div class="value-box">
           <div class="icon-circle value-icon purple">
-            <i class="fas fa-user-friends"></i>
+            <i data-lucide="users"></i>
           </div>
           <h4>Personalized Care</h4>
           <p>
@@ -81,7 +81,7 @@
         </div>
         <div class="value-box">
           <div class="icon-circle value-icon orange">
-            <i class="fas fa-award"></i>
+            <i data-lucide="award"></i>
           </div>
           <h4>Ancient Wisdom</h4>
           <p>
@@ -94,8 +94,8 @@
       <section class="story">
         <h3>Our Story</h3>
         <p>
-          AyurBalance AI was born from a simple observation: while Ayurveda
-          offers profound wisdom for health and wellness, accessing personalized
+          Tridosha AI was born from a simple observation: while Ayurveda offers
+          profound wisdom for health and wellness, accessing personalized
           guidance has traditionally required extensive knowledge or expensive
           consultations.<br /><br />
           Our team of Ayurvedic practitioners, AI researchers, and wellness
@@ -104,9 +104,9 @@
           learning with traditional Ayurvedic principles, we’ve created a
           platform that provides personalized wellness based on your unique
           constitution and current state of health.<br /><br />
-          Today, AyurBalance AI serves thousands of users worldwide, helping
-          them discover their optimal path to wellness through the timeless
-          wisdom of Ayurveda.
+          Today, Tridosha AI serves thousands of users worldwide, helping them
+          discover their optimal path to wellness through the timeless wisdom of
+          Ayurveda.
         </p>
       </section>
 
@@ -116,8 +116,13 @@
           Discover your unique Ayurvedic constitution and start your
           personalized wellness journey today.
         </p>
-        <button>Start Your Assessment</button>
+        <button onclick="window.location.href='name entering page.html'">
+          Start Your Assessment
+        </button>
       </section>
     </main>
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>

@@ -52,15 +52,6 @@ body {
   background: #ff702d;
 }
 
-nav-links a::after {
-  content: '';
-  display: block;
-  height: 2px;
-  background-color: #f973b4;
-  transition: 0.3s ease;
-  width: 0%;
-}
-
 /* HERO SECTION */
 .hero {
   text-align: center;
