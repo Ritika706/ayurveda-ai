@@ -147,11 +147,25 @@ body {
     width:15px;
     height:15px;
 }
+.next {
+  background: #fff;
+  border: 1px solid #eee;
+  color: #000000;
+  font-weight: 600;
+  gap:10px;
+}
+.next:hover{
+    color:white;
+    background:#f97316;
+    cursor:pointer;
+}
+
 .previous {
   background: #fff;
   border: 1px solid #eee;
   color: #000000;
   font-weight: 600;
+  gap: 10px;
 }
 .previous:hover{
     color:white;
@@ -163,6 +177,7 @@ body {
   background: linear-gradient(to left, #f8a52a, #f97316);
   color: white;
   font-weight: 600;
+  gap:10px;
 }
 .res:hover{
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);

@@ -10,60 +10,48 @@
   <body>
     <div class="container">
       <h1 class="title">Dosha Assessment</h1>
-      <p class="subtitle">
-        Hi xyz! Answer these questions to discover your unique constitution
+      <p class="subtitle" id="username">
+        Hi! Answer these questions to discover your unique constitution
       </p>
 
+      <!-- Progress Section -->
       <div class="progress-section">
-        <span>Question 8 of 8</span>
-        <span>100% Complete</span>
+        <span id="question-count">Question 1 of 8</span>
+        <span id="percent-complete">12% Complete</span>
       </div>
 
       <div class="progress-bar">
-        <div class="progress-fill"></div>
+        <div class="progress-fill" id="progress-fill"></div>
       </div>
 
+      <!-- Question Card -->
       <div class="card">
         <div class="card-header">
           <span class="dot"></span>
-          <span class="category">Physical Activity</span>
+          <span class="category" id="category">Category</span>
         </div>
 
-        <h2 class="question">What type of Exercise do you prefer?</h2>
+        <h2 class="question" id="question-text">Question text here</h2>
 
-        <form class="options">
-          <label class="custom-radio">
-            <input type="radio" name="body" />
-            <span class="radio-circle"></span>
-            Thin, light frame with prominent joints
-          </label>
-
-          <label class="custom-radio">
-            <input type="radio" name="body" />
-            <span class="radio-circle"></span>
-            Medium build with good muscle tone
-          </label>
-
-          <label class="custom-radio">
-            <input type="radio" name="body" />
-            <span class="radio-circle"></span>
-            Large frame with solid, heavy build
-          </label>
-        </form>
+        <form class="options" id="options-form"></form>
 
         <div class="buttons">
-          <button class="btn previous">
+          <button class="btn previous" onclick="prevQuestion()">
             <i data-lucide="move-left"></i>Previous
           </button>
-          <button
-            class="btn res"
-            onclick="window.location.href='result page.html'"
-          >
+          <button class="btn next" onclick="nextQuestion()">
+            Next<i data-lucide="move-right"></i>
+          </button>
+          <button>
+            class="btn res" id="get-results-btn" onclick="submitQuiz()"
+            style="display: none" >
             <i data-lucide="sparkles"></i>Get Results
           </button>
         </div>
       </div>
     </div>
+
+    <script src="quiz.js"></script>
     <script>
       lucide.createIcons();
     </script>
