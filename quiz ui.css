@@ -146,16 +146,9 @@ body {
   line-height:1;     
   transition: background 0.3s ease, color 0.3s ease;         
 }
-.btn svg {
-  width: 16px;
-  height: 16px;
-  flex-shrink: 0;
-  margin-right: 6px;
-}
-
-.btn svg:last-child {
-  margin-right: 6px;
-  margin-left: 6px;
+.btn .text {
+  display: inline-block;
+  line-height: 2;
 }
 .next {
   background: #fff;
