@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="site-header">
-      <div class="logo-section">
+      <div class="logo-section" id="main-content">
         <img src="images/leaf.png" alt="Logo" class="logo" />
         <h1 class="site-title">Tridosha AI</h1>
       </div>
@@ -17,8 +17,8 @@
         <a href="landing page.html">Home</a>
         <a href="About.html">About</a>
         <a href="contact.html">Contact</a>
-        <a href="signin.html">Sign In</a>
-        <a href="signup.html">Sign Up</a>
+        <a href="#" id="openSignIn">SignIn</a>
+        <a href="#" id="openSignUp">SignUp</a>
       </nav>
     </header>
 
@@ -121,6 +121,111 @@
         </button>
       </section>
     </main>
+    <!-- Sign In Modal -->
+    <div class="modal-overlay" id="signinModal">
+      <div class="signin-modal">
+        <span class="close-btn" id="closeSignInModal">×</span>
+        <h2>Welcome Back</h2>
+
+        <form id="signinForm">
+          <div class="input-with-icon">
+            <input type="email" placeholder="Email" required />
+            <i class="input-icon" data-lucide="mail"></i>
+          </div>
+
+          <div class="password-container">
+            <input
+              type="password"
+              placeholder="Password"
+              id="signInPasswordField"
+              required
+            />
+            <button
+              class="toggle-password"
+              type="button"
+              onclick="togglePassword('signInPasswordField', 'signInEyeIcon')"
+            >
+              <i id="signInEyeIcon" data-lucide="eye"></i>
+            </button>
+          </div>
+
+          <div class="checkbox-container">
+            <input type="checkbox" id="rememberMe" />
+            <label for="rememberMe">Remember me</label>
+          </div>
+
+          <button type="submit">Sign In</button>
+        </form>
+
+        <div class="modal-footer">
+          <p><a href="#">Forgot password?</a></p>
+          <p>
+            Don't have an account?
+            <a href="#" onclick="switchToSignUp()">Sign Up</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div class="modal-overlay" id="signupModal">
+      <div class="signup-modal">
+        <span class="close-btn" id="closeSignUpModal">×</span>
+        <h2>Create Account</h2>
+
+        <form id="signupForm">
+          <div class="input-with-icon">
+            <input
+              type="text"
+              placeholder="Username"
+              id="usernameField"
+              required
+            />
+            <i class="input-icon" data-lucide="user"></i>
+          </div>
+
+          <div class="input-with-icon">
+            <input type="email" placeholder="Email" id="emailField" required />
+            <i class="input-icon" data-lucide="mail"></i>
+          </div>
+
+          <div class="password-container">
+            <input
+              type="password"
+              placeholder="Password"
+              id="signUpPasswordField"
+              required
+            />
+            <button
+              class="toggle-password"
+              type="button"
+              onclick="togglePassword('signUpPasswordField', 'signUpEyeIcon')"
+            >
+              <i id="signUpEyeIcon" data-lucide="eye"></i>
+            </button>
+          </div>
+          <div class="password-error" id="passwordError">
+            Password must contain at least 8 characters, one uppercase letter,
+            one number, and one special symbol.
+          </div>
+
+          <div class="checkbox-container">
+            <input type="checkbox" id="agreeTerms" required />
+            <label for="agreeTerms">I agree to the terms and conditions</label>
+          </div>
+
+          <button type="submit" id="registerBtn" disabled>Register</button>
+        </form>
+
+        <div class="modal-footer">
+          <p>
+            Already have an account?
+            <a href="#" onclick="switchToSignIn()">Sign In</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="landing page.js"></script>
     <script>
       lucide.createIcons();
     </script>
