@@ -1,0 +1,221 @@
+<header class="site-header">
+      <div class="logo-section" id="main-content">
+        <img src="images/leaf.png" alt="Logo" class="logo" />
+        <h1 class="site-title">Tridosha AI</h1>
+      </div>
+      <nav class="nav-links">
+        <a href="landing page.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="#" id="openSignIn">SignIn</a>
+        <a href="#" id="openSignUp">SignUp</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>About Tridosha AI</h1>
+      <p class="subheading">
+        We're revolutionizing wellness by combining 5,000 years of Ayurvedic
+        wisdom with cutting edge artificial intelligence to provide personalized
+        health guidance.
+      </p>
+
+      <section class="mission-vision">
+        <div class="box">
+          <div class="icon-circle mission-icon">
+            <i data-lucide="heart"></i>
+          </div>
+          <h3>Our Mission</h3>
+          <p>
+            To make ancient Ayurvedic wisdom accessible to everyone through
+            modern technology, helping individuals achieve optimal health and
+            wellness through personalized, holistic approaches that honor both
+            tradition and innovation.
+          </p>
+        </div>
+        <div class="box">
+          <div class="icon-circle vision-icon">
+            <i data-lucide="brain"></i>
+          </div>
+          <h3>Our Vision</h3>
+          <p>
+            A world where everyone has access to personalized wellness guidance
+            rooted in time-tested Ayurvedic principles, empowering individuals
+            to live balanced, healthy lives in harmony with their unique
+            constitution.
+          </p>
+        </div>
+      </section>
+
+      <h2 class="values-heading">Our Values</h2>
+      <section class="values">
+        <div class="value-box">
+          <div class="icon-circle value-icon green">
+            <i data-lucide="globe"></i>
+          </div>
+          <h4>Holistic Wellness</h4>
+          <p>
+            We believe true wellness encompasses mind, body, and spirit in
+            perfect harmony.
+          </p>
+        </div>
+        <div class="value-box">
+          <div class="icon-circle value-icon purple">
+            <i data-lucide="users"></i>
+          </div>
+          <h4>Personalized Care</h4>
+          <p>
+            Every individual is unique, and their wellness journey should be
+            too.
+          </p>
+        </div>
+        <div class="value-box">
+          <div class="icon-circle value-icon orange">
+            <i data-lucide="award"></i>
+          </div>
+          <h4>Ancient Wisdom</h4>
+          <p>
+            Honoring traditional Ayurvedic knowledge while embracing modern
+            innovation.
+          </p>
+        </div>
+      </section>
+
+      <section class="story">
+        <h3>Our Story</h3>
+        <p>
+          Tridosha AI was born from a simple observation: while Ayurveda offers
+          profound wisdom for health and wellness, accessing personalized
+          guidance has traditionally required extensive knowledge or expensive
+          consultations.<br /><br />
+          Our team of Ayurvedic practitioners, AI researchers, and wellness
+          enthusiasts came together with a shared vision to democratize access
+          to this ancient wisdom through modern technology. By combining machine
+          learning with traditional Ayurvedic principles, we’ve created a
+          platform that provides personalized wellness based on your unique
+          constitution and current state of health.<br /><br />
+          Today, Tridosha AI serves thousands of users worldwide, helping them
+          discover their optimal path to wellness through the timeless wisdom of
+          Ayurveda.
+        </p>
+      </section>
+
+      <section class="cta">
+        <h3>Ready to Begin Your Journey?</h3>
+        <p>
+          Discover your unique Ayurvedic constitution and start your
+          personalized wellness journey today.
+        </p>
+        <button onclick="window.location.href='name entering page.html'">
+          Start Your Assessment
+        </button>
+      </section>
+    </main>
+    <!-- Sign In Modal -->
+    <div class="modal-overlay" id="signinModal">
+      <div class="signin-modal">
+        <span class="close-btn" id="closeSignInModal">×</span>
+        <h2>Welcome Back</h2>
+
+        <form id="signinForm">
+          <div class="input-with-icon">
+            <input type="email" placeholder="Email" required />
+            <i class="input-icon" data-lucide="mail"></i>
+          </div>
+
+          <div class="password-container">
+            <input
+              type="password"
+              placeholder="Password"
+              id="signInPasswordField"
+              required
+            />
+            <button
+              class="toggle-password"
+              type="button"
+              onclick="togglePassword('signInPasswordField', 'signInEyeIcon')"
+            >
+              <i id="signInEyeIcon" data-lucide="eye"></i>
+            </button>
+          </div>
+
+          <div class="checkbox-container">
+            <input type="checkbox" id="rememberMe" />
+            <label for="rememberMe">Remember me</label>
+          </div>
+
+          <button type="submit">Sign In</button>
+        </form>
+
+        <div class="modal-footer">
+          <p><a href="#">Forgot password?</a></p>
+          <p>
+            Don't have an account?
+            <a href="#" onclick="switchToSignUp()">Sign Up</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div class="modal-overlay" id="signupModal">
+      <div class="signup-modal">
+        <span class="close-btn" id="closeSignUpModal">×</span>
+        <h2>Create Account</h2>
+
+        <form id="signupForm">
+          <div class="input-with-icon">
+            <input
+              type="text"
+              placeholder="Username"
+              id="usernameField"
+              required
+            />
+            <i class="input-icon" data-lucide="user"></i>
+          </div>
+
+          <div class="input-with-icon">
+            <input type="email" placeholder="Email" id="emailField" required />
+            <i class="input-icon" data-lucide="mail"></i>
+          </div>
+
+          <div class="password-container">
+            <input
+              type="password"
+              placeholder="Password"
+              id="signUpPasswordField"
+              required
+            />
+            <button
+              class="toggle-password"
+              type="button"
+              onclick="togglePassword('signUpPasswordField', 'signUpEyeIcon')"
+            >
+              <i id="signUpEyeIcon" data-lucide="eye"></i>
+            </button>
+          </div>
+          <div class="password-error" id="passwordError">
+            Password must contain at least 8 characters, one uppercase letter,
+            one number, and one special symbol.
+          </div>
+
+          <div class="checkbox-container">
+            <input type="checkbox" id="agreeTerms" required />
+            <label for="agreeTerms">I agree to the terms and conditions</label>
+          </div>
+
+          <button type="submit" id="registerBtn" disabled>Register</button>
+        </form>
+
+        <div class="modal-footer">
+          <p>
+            Already have an account?
+            <a href="#" onclick="switchToSignIn()">Sign In</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="landing page.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
